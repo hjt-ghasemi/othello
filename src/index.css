@@ -1,0 +1,236 @@
+#myCanvas {
+  border: 15px solid #544b3d;
+  background-color: #4e6e58;
+  max-width: calc(100vw - 30px);
+}
+body {
+  background-color: #a6ece088;
+}
+
+hr {
+  background-color: white;
+}
+
+/* start of Navbar */
+.myNavbar {
+  background-color: #4c8577;
+}
+
+.myNavbar a {
+  color: #99ffee;
+  font-size: 1.2rem;
+}
+
+.myNavbar a:hover,
+.myNavbar a.active {
+  color: white;
+}
+/* end of Navbar */
+
+/* start of new game form */
+.new-game-form {
+  background-color: #4c8577;
+  padding: 20px 15px;
+}
+
+.new-game-form label {
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+.new-game-form input,
+.new-game-form select {
+  text-align: center;
+  border-radius: 0;
+  letter-spacing: 1px;
+  border: none;
+  color: #353a47;
+  outline: none !important;
+}
+
+.new-game-form input::placeholder {
+  color: #353a4788;
+}
+
+.new-game-form button {
+  background: #a0e0c0;
+  color: #544b3d;
+  display: block;
+  font-weight: bold;
+  margin: 20px auto 0px auto;
+}
+/* end of new game form */
+
+/* start of load game, result table */
+.load-table,
+.result-table {
+  max-width: 700px;
+  color: #2c6557;
+  margin: 20px auto 0;
+}
+
+.load-table button {
+  background-color: #4e6e58;
+  color: white !important;
+  border-radius: 0;
+}
+
+.load-table tbody tr,
+.result-table tbody tr {
+  border-bottom: 1px solid #544b3d44;
+}
+/* end of load game, reuslt table */
+
+/* start of game dashboard */
+.game-dashboard {
+  max-width: 1000px;
+  padding: 15px 0;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.game-dashboard button {
+  background-color: #a6ece0;
+  color: #4c8577 !important;
+  border-radius: 0;
+  letter-spacing: 1px;
+}
+.blackPoint {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  color: #e1e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333333;
+  margin-left: 5px;
+}
+.whitePoint {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  color: #333333;
+  background: #e1e1e1;
+}
+
+.game-billboard {
+  display: flex;
+  background-color: #a6ece0;
+  padding: 7px 5px;
+  text-transform: capitalize;
+}
+
+.game-billboard-data {
+  margin: 0 7px;
+  padding: 3px;
+  display: flex;
+  color: #4c8577;
+  font-weight: bold;
+}
+
+.game-billboard-data.active {
+  border-bottom: 2px solid #4e6e58;
+}
+
+/* end of game dashboard */
+
+/* start of winner */
+.overal {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  background: rgba(20, 20, 20, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overal h1 {
+  text-align: center;
+  color: white;
+  line-height: 95px;
+  font-size: 60px;
+}
+
+.new-game-link,
+.new-game-link:hover {
+  text-decoration: none;
+  color: lightcoral;
+  font-size: 1.5em;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* end of winners */
+
+/* start of utils */
+.display-center {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  min-height: calc(100vh - 60px);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.LS-header {
+  font-size: 50px;
+  font-weight: 100;
+  color: #3c7567;
+  line-height: 90px;
+  text-align: center;
+}
+
+.my-link {
+  display: block;
+  text-align: center;
+  color: #4e6e5877 !important;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+/* end of utils */
+
+/* start of break points */
+
+@media only screen and (max-width: 470px) {
+  .myNavbar a {
+    padding: 2px;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 250, 0.2);
+  }
+
+  .load-table tbody tr {
+    font-size: 0.9rem;
+  }
+
+  .game-dashboard button {
+    padding: 3px;
+    font-size: 0.9rem;
+  }
+
+  .game-billboard-data {
+    font-size: 0.8rem;
+    margin: 0 4px;
+  }
+  .game-billboard {
+    padding: 6px 2px;
+  }
+}
+
+/* end of break points */
