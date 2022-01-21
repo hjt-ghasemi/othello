@@ -216,7 +216,7 @@ hr {
   }
 
   .load-table tbody tr {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .game-dashboard button {
@@ -230,6 +230,27 @@ hr {
   }
   .game-billboard {
     padding: 6px 2px;
+  }
+  .overal h1 {
+    text-align: center;
+    color: white;
+    line-height: 45px;
+    font-size: 30px;
+  }
+
+  .new-game-link,
+  .new-game-link:hover {
+    text-decoration: none;
+    color: lightcoral;
+    font-size: 1.3em;
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .load-table,
+  .result-table {
+    border: 10px solid transparent;
   }
 }
 
